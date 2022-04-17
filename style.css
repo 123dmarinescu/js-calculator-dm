@@ -1,28 +1,176 @@
 .container {
-  width: 250px;
-  margin: 5px;
-  box-sizing: content-box;
-  background-color: grey;
-  border: 5px solid rgb(0, 0, 0);
-  border-radius: 15px;
+                  display: grid;
+                  row-gap: 0.4rem;
+                  grid-auto-columns: 1fr;
+                  grid-template-areas: 
+                  'display-result'
+                  'display-memmory'
+                  ;
+
 }
 
-.container .display-result {
+.display-result{
   background-color: black;
   color: white;
-  height: 70px;
-  margin: 4px;
-  font-size: 7px;
 }
-
-.container .display-memory {
-  background-color: green;
+.display-memory{
+  background-color: rgb(1, 82, 1);
   color: white;
-  height: 50px;
-  font-size: 10px;
-  margin: 4px;
 }
 
-span:active {
-  background-color: yellow;
+.buttons{
+background-color: grey;
+display: grid;
+column-gap: 0.4rem;
+row-gap: 0.3rem;
+grid-auto-columns: 1fr;
+grid-template-areas: 
+                  'MC'
+                  'MS'
+                  'Backspace'
+                  'M-plus'
+                  'M-minus'
+                  'MR'
+                  'AC'
+                  'sapte'
+                  'opt'
+                  'noua'
+                  'impartit'
+                  'patru'
+                  'cinci'
+                  'sase'
+                  'inmultit'
+                  'unu'
+                  'doi'
+                  'trei'
+                  'minus'
+                  'punct'
+                  'zeroo'
+                  'egal'
+                  'plus';
+
+}
+
+.display-result h1:nth-child(1) {
+  grid-area: display-result;
+}
+
+.display-memory h2:nth-child(1) {
+  grid-area: display-memory;
+}
+
+.buttons span:nth-child(1){
+  grid-area: MC;
+}
+
+.buttons span:nth-child(2){
+  grid-area: MS;
+}
+
+.buttons span:nth-child(3){
+  grid-area: Backspace;
+}
+
+.buttons span:nth-child(4){
+  grid-area: M-plus;
+}
+
+.buttons span:nth-child(5){
+  grid-area: M-minus;
+}
+
+.buttons span:nth-child(6){
+  grid-area: MR;
+}
+
+.buttons span:nth-child(7){
+  grid-area: AC;
+}
+
+.buttons span:nth-child(8){
+  grid-area: sapte;
+}
+
+.buttons span:nth-child(9){
+  grid-area: opt;
+}
+
+.buttons span:nth-child(10){
+  grid-area: noua;
+}
+
+.buttons span:nth-child(11){
+  grid-area: impartit;
+}
+
+.buttons span:nth-child(12){
+  grid-area: patru;
+}
+
+.buttons span:nth-child(13){
+  grid-area: cinci;
+}
+
+.buttons span:nth-child(14){
+  grid-area: sase;
+}
+
+.buttons span:nth-child(15){
+  grid-area: inmultit;
+}
+
+.buttons span:nth-child(16){
+  grid-area: unu;
+}
+
+.buttons span:nth-child(17){
+  grid-area: doi;
+}
+
+.buttons span:nth-child(18){
+  grid-area: trei;
+}
+
+.buttons span:nth-child(19){
+  grid-area: minus;
+}
+
+.buttons span:nth-child(20){
+  grid-area: punct;
+}
+
+.buttons span:nth-child(21){
+  grid-area: zeroo;
+}
+
+.buttons span:nth-child(22){
+  grid-area: egal;
+}
+
+.buttons span:nth-child(23){
+  grid-area: plus;
+}
+
+@media (min-wdith: 200em){
+  .container{
+    grid-template-areas: 
+"display-result display-result display-result display-result"
+"display-memmory display-memmory display-memmory display-memmory"
+"MC MS Backspace Backspace"
+"M-plus M-minus MR AC"
+"sapte opt noua impartit"
+"patru cinci sase inmultit"
+"unu doi trei minus"
+"punct zeroo egal plus"
+;
+  }
+  .buttons {
+    grid-template-areas: 
+"MC MS Backspace Backspace"
+"M-plus M-minus MR AC"
+"sapte opt noua impartit"
+"patru cinci sase inmultit"
+"unu doi trei minus"
+"punct zeroo egal plus";
+  }
 }

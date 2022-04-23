@@ -1,6 +1,12 @@
-const number = document.querySelectorAll('.buttons')
-number.forEach(item =>{
-    item = document.createElement('button')
-})
+// const MC = document.getElementById('MC')
 
-console.log(number)
+// MC.addEventListener('click', function(e){
+//     console.log('MC')
+// })
+
+const buttons = document.querySelector('.buttons')
+
+buttons.addEventListener('click', function(e){
+    console.log('text112')
+})
+console.log(buttons)

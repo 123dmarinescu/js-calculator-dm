@@ -51,6 +51,7 @@ grid-template-areas:
 
 }
 
+
 .display-result h1:nth-child(1) {
   grid-area: display-result;
 }
